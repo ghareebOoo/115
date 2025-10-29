@@ -90,19 +90,20 @@ export default function DataCarousel() {
             </div>
             <div className='xl:max-w-[65%] w-full'>
                 <Swiper
-                modules={[Navigation , Autoplay]}
+                  modules={[Navigation , Autoplay]}
                   autoplay={{
                   delay: 3000,
                   disableOnInteraction: false,
-                }}
-                 navigation={{
-                    nextEl:".btnLeft",
-                    prevEl:".btnRight",
-                 }}
+                  }}
+                  loop={true}
+                  navigation={{
+                    nextEl: ".btnRight",
+                    prevEl: ".btnLeft",
+                  }}
                   spaceBetween={30}
                   slidesPerView={1}
                   breakpoints={{ 640: { slidesPerView: 1 },768: { slidesPerView: 2 }, 
-                  1024: { slidesPerView: 3 }, 1280: { slidesPerView: 4 }, }}
+                  1024: { slidesPerView: 3 }, 1280: { slidesPerView: 3 }, }}
                   onSlideChange={changeSlide}
                   className='w-full h-[400px] xl:h-[500px]'
               >

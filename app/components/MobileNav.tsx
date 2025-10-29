@@ -85,9 +85,9 @@ export default function MobileNav() {
 
     
     useEffect(() => {
-        let animation: gsap.core.Tween |  undefined
-       if(mob ){
-            animation = gsap.from(refDiv.current, {
+        // let animation: gsap.core.Tween |  undefined
+       if(mob){
+          const animation: gsap.core.Tween |  undefined = gsap.from(refDiv.current, {
             opacity: 0,
             duration: 1,
             y: 100
